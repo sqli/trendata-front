@@ -1,0 +1,21 @@
+{
+  "name": "trendata-front",
+  "description": "Trendata project's Angular2 web application",
+  "main": "index.html",
+  "authors": [
+    "Jeremie Rodriguez <jrodriguez@sqli.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.8"
+  }
+}
