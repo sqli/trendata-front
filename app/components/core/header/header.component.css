@@ -1,0 +1,51 @@
+hr.header-hr {
+    height: 20px;
+    border: 10px;
+    box-shadow: 0 15px 20px -20px #5f537c inset;
+    opacity: 0.5;
+    border-bottom-right-radius: 50% 100%;
+    border-bottom-left-radius: 50% 100%;
+    width: 50%;
+}
+
+.navbar-nav {
+    font-weight: bold;
+    margin-top: 1%;
+    box-shadow: 0;
+}
+
+li:after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid #0D47A1;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+li:hover:after {
+    transform: scaleX(1);
+}
+
+.navbar-logo {
+    /*display: block;*/
+    /*box-sizing: border-box;*/
+    /*background: url('app/resources/img/trendata_fulllogo.png') no-repeat;*/
+    /*width: auto;*/
+    /*height: auto; !* Height of new image *!*/
+    /*padding-left: 180px; !* Equal to width of new image *!*/
+    margin-left: 5%;
+}
+
+.active {
+    color: #6a1b9a;
+    background-color: black;
+}
+
+.tabs .indicator {
+    color: #6a1b9a !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        align-content: center;
+    }
+}

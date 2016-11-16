@@ -1,0 +1,19 @@
+<header>
+    <nav class="navbar-nav z-depth-0">
+
+        <div class="nav-wrapper white">
+            <a [routerLink]="['home']"><img class="brand-logo left navbar-logo"
+                                            src="app/resources/img/trendata_fulllogo.png" alt="" height="55px"/></a>
+            <div class="brand-logo center">
+                <ul #navUl class="tabs hide-on-med-and-down">
+                    <li *ngFor="let item of menuItems" class="tab">
+                        <a [routerLink]="[item.link]" class="blue-text">{{ item.title | uppercase }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<hr class="header-hr"/>

@@ -8,21 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var core_1 = require("@angular/core");
+var SectorMappingComponent = (function () {
+    function SectorMappingComponent() {
     }
-    AppComponent.prototype.ngOnInit = function () {
-    };
-    AppComponent = __decorate([
+    SectorMappingComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'trendata-app',
-            templateUrl: 'app.component.html'
+            selector: 'sector-mapping',
+            templateUrl: './sector-mapping.component.html',
+            styleUrls: ['./sector-mapping.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], SectorMappingComponent);
+    return SectorMappingComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.SectorMappingComponent = SectorMappingComponent;
+//# sourceMappingURL=sector-mapping.component.js.map

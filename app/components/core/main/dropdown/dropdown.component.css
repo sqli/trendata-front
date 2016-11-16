@@ -1,0 +1,10 @@
+h1 {
+    font-size: 2.2em;
+    font-weight: lighter;
+}
+
+.dropdown-btn {
+    color: black;
+    font-weight: bolder;
+    background-color: #fcc908;
+}

@@ -8,21 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var core_1 = require("@angular/core");
+var CGVComponent = (function () {
+    function CGVComponent() {
     }
-    AppComponent.prototype.ngOnInit = function () {
-    };
-    AppComponent = __decorate([
+    CGVComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'trendata-app',
-            templateUrl: 'app.component.html'
+            selector: 'cgv',
+            templateUrl: './cgv.component.html',
+            styleUrls: ['./cgv.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], CGVComponent);
+    return CGVComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.CGVComponent = CGVComponent;
+//# sourceMappingURL=cgv.component.js.map

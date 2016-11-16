@@ -8,21 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var core_1 = require("@angular/core");
+var JQueryService = (function () {
+    function JQueryService() {
     }
-    AppComponent.prototype.ngOnInit = function () {
-    };
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'trendata-app',
-            templateUrl: 'app.component.html'
-        }), 
+    JQueryService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], JQueryService);
+    return JQueryService;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.JQueryService = JQueryService;
+//# sourceMappingURL=jQuery.service.js.map

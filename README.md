@@ -15,8 +15,14 @@ $ npm install
 # If you don't have Bower installed already, run this before
 $ npm install -g bower
 
+# If you don't have Typings installed already, run this before
+$ npm install -g typings
+
 # Installs project dependencies listed in bower.json
 $ bower install
+
+# Installs project TypeScript definitions listed in typings.json
+$ typings install
 
 # Runs embedded lite-server
 $ npm start

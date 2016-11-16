@@ -8,18 +8,40 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./components/core/app.component");
+var header_component_1 = require("./components/core/header/header.component");
+var footer_component_1 = require("./components/core/footer/footer.component");
+var sector_mapping_component_1 = require("./components/core/main/sector-mapping/sector-mapping.component");
+var app_routing_module_1 = require("./routes/app-routing.module");
+var home_component_1 = require("./components/core/main/home.component");
+var jQuery_service_1 = require("./services/jQuery.service");
+var about_component_1 = require("./components/core/main/about/about.component");
+var cgv_component_1 = require("./components/core/footer/cgv/cgv.component");
+var news_component_1 = require("./components/core/footer/news/news.component");
+var footer_routing_module_1 = require("./routes/footer-routing.module");
+var dropdown_component_1 = require("./components/core/main/dropdown/dropdown.component");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, router_1.RouterModule],
-            declarations: [app_component_1.AppComponent],
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, router_1.RouterModule, app_routing_module_1.AppRoutingModule, footer_routing_module_1.FooterRoutingModule],
+            declarations: [
+                app_component_1.AppComponent,
+                header_component_1.HeaderComponent,
+                home_component_1.HomeComponent,
+                footer_component_1.FooterComponent,
+                sector_mapping_component_1.SectorMappingComponent,
+                about_component_1.AboutComponent,
+                cgv_component_1.CGVComponent,
+                news_component_1.NewsComponent,
+                dropdown_component_1.DropdownComponent
+            ],
+            providers: [jQuery_service_1.JQueryService],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

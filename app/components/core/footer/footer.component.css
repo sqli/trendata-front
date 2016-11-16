@@ -1,0 +1,56 @@
+.page-footer {
+    background: linear-gradient(to right, #93288f, #29abe2);
+}
+
+.footer-copyright {
+    background-color: #1d1d1b !important;
+    margin-top: 50px;
+}
+
+.ft-cpr-links {
+    margin-right: 3%;
+}
+
+.contact-btn {
+    padding: 7px 20px 7px 20px;
+    border: solid #29abe2 2px;
+    border-radius: 30px;
+}
+
+.link-header {
+    color: #fcc908;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contact-div {
+    margin: auto;
+    text-align: center;
+}
+
+.sqli-address {
+    margin-top: -10px;
+}
+
+.social-btns {
+    margin-top: 15px;
+}
+
+.ft-cpr {
+    padding-left: 45px;
+}
+
+@media screen and (min-width: 992px) {
+    .contact-div {
+        padding-left: 5%;
+        text-align: left;
+    }
+
+    .contact-btn, .sqli-address, .social-btns {
+        margin-left: 63px;
+    }
+
+    .col-content {
+        margin: auto;
+    }
+}

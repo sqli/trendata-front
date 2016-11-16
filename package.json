@@ -9,9 +9,9 @@
   },
   "description": "Trendata project's Angular2 web application",
   "license": "MIT",
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/sqli/trendata-front.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sqli/trendata-front.git"
   },
   "dependencies": {
     "@angular/common": "~2.1.1",
