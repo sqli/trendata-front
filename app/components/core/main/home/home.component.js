@@ -9,19 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var SectorMappingComponent = (function () {
-    function SectorMappingComponent() {
+var HomeComponent = (function () {
+    function HomeComponent() {
     }
-    SectorMappingComponent = __decorate([
+    HomeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'sector-mapping',
-            templateUrl: './sector-mapping.component.html',
-            styleUrls: ['./sector-mapping.component.css']
+            selector: 'trendata-home',
+            templateUrl: 'home.component.html',
+            styleUrls: ['home.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], SectorMappingComponent);
-    return SectorMappingComponent;
+    ], HomeComponent);
+    return HomeComponent;
 }());
-exports.SectorMappingComponent = SectorMappingComponent;
-//# sourceMappingURL=sector-mapping.component.js.map
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.component.js.map

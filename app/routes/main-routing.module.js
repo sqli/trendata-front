@@ -13,7 +13,32 @@ var core_1 = require("@angular/core");
 var about_component_1 = require("../components/core/main/about/about.component");
 var news_component_1 = require("../components/core/footer/news/news.component");
 var cgv_component_1 = require("../components/core/footer/cgv/cgv.component");
+var sector_mapping_component_1 = require("../components/core/main/services/sector-mapping/sector-mapping.component");
+var reports_component_1 = require("../components/core/main/reports/reports.component");
+var offers_component_1 = require("../components/core/main/offers/offers.component");
+var documentation_component_1 = require("../components/core/main/documentation/documentation.component");
+var support_component_1 = require("../components/core/main/support/support.component");
 var routes = [
+    {
+        path: 'sector-mapping',
+        component: sector_mapping_component_1.SectorMappingComponent
+    },
+    {
+        path: 'reports',
+        component: reports_component_1.ReportsComponent
+    },
+    {
+        path: 'offers',
+        component: offers_component_1.OffersComponent
+    },
+    {
+        path: 'documentation',
+        component: documentation_component_1.DocumentationComponent
+    },
+    {
+        path: 'support',
+        component: support_component_1.SupportComponent
+    },
     {
         path: 'about',
         component: about_component_1.AboutComponent
@@ -27,17 +52,17 @@ var routes = [
         component: cgv_component_1.CGVComponent
     }
 ];
-var FooterRoutingModule = (function () {
-    function FooterRoutingModule() {
+var MainRoutingModule = (function () {
+    function MainRoutingModule() {
     }
-    FooterRoutingModule = __decorate([
+    MainRoutingModule = __decorate([
         core_1.NgModule({
             imports: [router_1.RouterModule.forRoot(routes)],
             exports: [router_1.RouterModule]
         }), 
         __metadata('design:paramtypes', [])
-    ], FooterRoutingModule);
-    return FooterRoutingModule;
+    ], MainRoutingModule);
+    return MainRoutingModule;
 }());
-exports.FooterRoutingModule = FooterRoutingModule;
-//# sourceMappingURL=footer-routing.module.js.map
+exports.MainRoutingModule = MainRoutingModule;
+//# sourceMappingURL=main-routing.module.js.map

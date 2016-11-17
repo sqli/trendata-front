@@ -17,7 +17,8 @@ hr.header-hr {
 li:after {
     display: block;
     content: '';
-    border-bottom: 2px solid #0D47A1;
+    border-spacing: 2px;
+    border-bottom: 3px solid #0D47A1;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
@@ -26,23 +27,16 @@ li:hover:after {
 }
 
 .navbar-logo {
-    /*display: block;*/
-    /*box-sizing: border-box;*/
-    /*background: url('app/resources/img/trendata_fulllogo.png') no-repeat;*/
-    /*width: auto;*/
-    /*height: auto; !* Height of new image *!*/
-    /*padding-left: 180px; !* Equal to width of new image *!*/
     margin-left: 5%;
 }
 
 .active {
     color: #6a1b9a;
-    background-color: black;
 }
 
-.tabs .indicator {
-    color: #6a1b9a !important;
-}
+/*.tabs .indicator {*/
+    /*color: #6a1b9a !important;*/
+/*}*/
 
 @media (max-width: 768px) {
     .navbar-logo {

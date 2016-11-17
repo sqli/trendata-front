@@ -1,7 +1,6 @@
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
-import {HomeComponent} from "../components/core/main/home.component";
-import {SectorMappingComponent} from "../components/core/main/sector-mapping/sector-mapping.component";
+import {HomeComponent} from "../components/core/main/home/home.component";
 
 const routes: Routes = [
     {
@@ -12,10 +11,6 @@ const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent
-    },
-    {
-        path: 'sector-mapping',
-        component: SectorMappingComponent
     }
 ];
 

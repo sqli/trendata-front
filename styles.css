@@ -1,3 +1,23 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.section-title {
+    font-size: 2.2em;
+    font-weight: lighter;
+}
+
+.main-container {
+    min-height: 60vh;
+}
+
+.trend-panel {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media screen and (min-width: 992px) {
+    .section-title {
+        margin-left: 75px;
+    }
+}

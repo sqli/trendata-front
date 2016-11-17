@@ -8,31 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var router_1 = require("@angular/router");
 var core_1 = require("@angular/core");
-var home_component_1 = require("../components/core/main/home/home.component");
-var routes = [
-    {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
-    },
-    {
-        path: 'home',
-        component: home_component_1.HomeComponent
+var SupportComponent = (function () {
+    function SupportComponent() {
     }
-];
-var AppRoutingModule = (function () {
-    function AppRoutingModule() {
-    }
-    AppRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [router_1.RouterModule.forRoot(routes)],
-            exports: [router_1.RouterModule]
+    SupportComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'support',
+            templateUrl: './support.component.html',
+            styleUrls: ['./support.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppRoutingModule);
-    return AppRoutingModule;
+    ], SupportComponent);
+    return SupportComponent;
 }());
-exports.AppRoutingModule = AppRoutingModule;
-//# sourceMappingURL=app-routing.module.js.map
+exports.SupportComponent = SupportComponent;
+//# sourceMappingURL=support.component.js.map

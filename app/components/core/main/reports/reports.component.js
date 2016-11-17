@@ -9,19 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var HomeComponent = (function () {
-    function HomeComponent() {
+var ReportsComponent = (function () {
+    function ReportsComponent() {
     }
-    HomeComponent = __decorate([
+    ReportsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'trendata-home',
-            templateUrl: './home.component.html',
-            styleUrls: ['./home.component.css']
+            selector: 'reports',
+            templateUrl: './reports.component.html',
+            styleUrls: ['./reports.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], ReportsComponent);
+    return ReportsComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.ReportsComponent = ReportsComponent;
+//# sourceMappingURL=reports.component.js.map

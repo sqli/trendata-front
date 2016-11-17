@@ -1,0 +1,21 @@
+.icon-right {
+    background-position: right;
+    color: #683d87;
+}
+
+select {
+    color: black !important;
+    font-weight: bolder !important;
+    background: #fcc908 !important;
+    width: 150px !important;
+    padding: 5px !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    height: 34px !important;
+}
+
+select:focus, select:active {
+    outline: none;
+}

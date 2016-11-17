@@ -9,36 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var jQuery_service_1 = require("../../../../services/jQuery.service");
-var DropdownComponent = (function () {
-    function DropdownComponent() {
+var jQuery_service_1 = require("../../../services/jQuery.service");
+var SelectBtnComponent = (function () {
+    function SelectBtnComponent() {
     }
-    DropdownComponent.prototype.ngOnInit = function () {
-        $('.dropdown-button').dropdown({
-            inDuration: 300,
-            outDuration: 225,
-            constrain_width: false,
-            hover: true,
-            gutter: 0,
-            belowOrigin: false,
-            alignment: 'left' // Displays dropdown with edge aligned to the left of button
-        });
+    // moduleid: any = module.id;
+    SelectBtnComponent.prototype.ngAfterViewInit = function () {
+        $('select').material_select();
+        // console.log(this.moduleid);
     };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', String)
-    ], DropdownComponent.prototype, "title", void 0);
-    DropdownComponent = __decorate([
+    ], SelectBtnComponent.prototype, "title", void 0);
+    SelectBtnComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'dropdown',
-            templateUrl: './dropdown.component.html',
-            styleUrls: ['./dropdown.component.css'],
+            selector: 'select-btn',
+            templateUrl: 'select-btn.component.html',
+            styleUrls: ['select-btn.component.css'],
             providers: [jQuery_service_1.JQueryService]
         }), 
         __metadata('design:paramtypes', [])
-    ], DropdownComponent);
-    return DropdownComponent;
+    ], SelectBtnComponent);
+    return SelectBtnComponent;
 }());
-exports.DropdownComponent = DropdownComponent;
-//# sourceMappingURL=dropdown.component.js.map
+exports.SelectBtnComponent = SelectBtnComponent;
+//# sourceMappingURL=select-btn.component.js.map

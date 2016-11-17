@@ -12,34 +12,44 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
+var app_routing_module_1 = require("./routes/app-routing.module");
+var main_routing_module_1 = require("./routes/main-routing.module");
 var app_component_1 = require("./components/core/app.component");
 var header_component_1 = require("./components/core/header/header.component");
 var footer_component_1 = require("./components/core/footer/footer.component");
-var sector_mapping_component_1 = require("./components/core/main/sector-mapping/sector-mapping.component");
-var app_routing_module_1 = require("./routes/app-routing.module");
-var home_component_1 = require("./components/core/main/home.component");
+var sector_mapping_component_1 = require("./components/core/main/services/sector-mapping/sector-mapping.component");
+var home_component_1 = require("./components/core/main/home/home.component");
 var jQuery_service_1 = require("./services/jQuery.service");
 var about_component_1 = require("./components/core/main/about/about.component");
 var cgv_component_1 = require("./components/core/footer/cgv/cgv.component");
 var news_component_1 = require("./components/core/footer/news/news.component");
-var footer_routing_module_1 = require("./routes/footer-routing.module");
-var dropdown_component_1 = require("./components/core/main/dropdown/dropdown.component");
+var select_btn_component_1 = require("./components/widgets/select-btn/select-btn.component");
+var reports_component_1 = require("./components/core/main/reports/reports.component");
+var offers_component_1 = require("./components/core/main/offers/offers.component");
+var documentation_component_1 = require("./components/core/main/documentation/documentation.component");
+var support_component_1 = require("./components/core/main/support/support.component");
+var text_card_component_1 = require("./components/widgets/text-card/text-card.component");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, router_1.RouterModule, app_routing_module_1.AppRoutingModule, footer_routing_module_1.FooterRoutingModule],
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, router_1.RouterModule, app_routing_module_1.AppRoutingModule, main_routing_module_1.MainRoutingModule],
             declarations: [
                 app_component_1.AppComponent,
                 header_component_1.HeaderComponent,
-                home_component_1.HomeComponent,
                 footer_component_1.FooterComponent,
+                home_component_1.HomeComponent,
                 sector_mapping_component_1.SectorMappingComponent,
+                reports_component_1.ReportsComponent,
+                offers_component_1.OffersComponent,
+                documentation_component_1.DocumentationComponent,
+                support_component_1.SupportComponent,
                 about_component_1.AboutComponent,
                 cgv_component_1.CGVComponent,
                 news_component_1.NewsComponent,
-                dropdown_component_1.DropdownComponent
+                select_btn_component_1.SelectBtnComponent,
+                text_card_component_1.TextCardComponent
             ],
             providers: [jQuery_service_1.JQueryService],
             bootstrap: [app_component_1.AppComponent]

@@ -13,16 +13,15 @@ var HeaderComponent = (function () {
     function HeaderComponent(renderer) {
         this.renderer = renderer;
         this.menuItems = [
-            { title: 'services', link: '/home' },
-            { title: 'rapports', link: '/sector-mapping' },
-            { title: 'offres', link: '/home' },
-            { title: 'documentation', link: '/home' },
-            { title: 'support', link: '/home' },
-            { title: 'à propos', link: '/home' }
+            { title: 'services', link: '/sector-mapping' },
+            { title: 'rapports', link: '/reports' },
+            { title: 'offres', link: '/offers' },
+            { title: 'documentation', link: '/documentation' },
+            { title: 'support', link: '/support' },
+            { title: 'à propos', link: '/about' }
         ];
     }
     HeaderComponent.prototype.ngAfterViewInit = function () {
-        $(this.navUl.nativeElement).tabs();
     };
     __decorate([
         core_1.ViewChild('navUl'), 

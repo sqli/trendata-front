@@ -12,18 +12,17 @@ export class HeaderComponent implements AfterViewInit {
     @ViewChild('navUl') navUl: ElementRef;
 
     menuItems: Object[] = [
-        {title: 'services', link: '/home'},
-        {title: 'rapports', link: '/sector-mapping'},
-        {title: 'offres', link: '/home'},
-        {title: 'documentation', link: '/home'},
-        {title: 'support', link: '/home'},
-        {title: 'à propos', link: '/home'}
+        {title: 'services', link: '/sector-mapping'},
+        {title: 'rapports', link: '/reports'},
+        {title: 'offres', link: '/offers'},
+        {title: 'documentation', link: '/documentation'},
+        {title: 'support', link: '/support'},
+        {title: 'à propos', link: '/about'}
     ];
 
     constructor(public renderer: Renderer) {
     }
 
     ngAfterViewInit(): void {
-        $(this.navUl.nativeElement).tabs();
     }
 }
