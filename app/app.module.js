@@ -29,6 +29,7 @@ var offers_component_1 = require("./components/core/main/offers/offers.component
 var documentation_component_1 = require("./components/core/main/documentation/documentation.component");
 var support_component_1 = require("./components/core/main/support/support.component");
 var text_card_component_1 = require("./components/widgets/text-card/text-card.component");
+var top_card_component_1 = require("./components/core/main/services/top-card/top-card.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -49,7 +50,8 @@ var AppModule = (function () {
                 cgv_component_1.CGVComponent,
                 news_component_1.NewsComponent,
                 select_btn_component_1.SelectBtnComponent,
-                text_card_component_1.TextCardComponent
+                text_card_component_1.TextCardComponent,
+                top_card_component_1.TopCardComponent
             ],
             providers: [jQuery_service_1.JQueryService],
             bootstrap: [app_component_1.AppComponent]

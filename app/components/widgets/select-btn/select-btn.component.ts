@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, AfterViewInit} from "@angular/core";
+import {Component, Input, AfterViewInit} from "@angular/core";
 import {JQueryService} from "../../../services/jQuery.service";
 
 @Component({
@@ -12,10 +12,7 @@ import {JQueryService} from "../../../services/jQuery.service";
 export class SelectBtnComponent implements AfterViewInit {
     @Input() title: string;
 
-    // moduleid: any = module.id;
-
     ngAfterViewInit(): void {
         $('select').material_select();
-        // console.log(this.moduleid);
     }
 }

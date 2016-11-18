@@ -10,18 +10,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var HeaderComponent = (function () {
-    function HeaderComponent(renderer) {
-        this.renderer = renderer;
-        this.menuItems = [
-            { title: 'services', link: '/sector-mapping' },
-            { title: 'rapports', link: '/reports' },
-            { title: 'offres', link: '/offers' },
-            { title: 'documentation', link: '/documentation' },
-            { title: 'support', link: '/support' },
-            { title: 'à propos', link: '/about' }
-        ];
+    function HeaderComponent() {
     }
     HeaderComponent.prototype.ngAfterViewInit = function () {
+        $('.dropdown-button').dropdown({
+            inDuration: 300,
+            outDuration: 300,
+            constrain_width: false,
+            hover: false,
+            gutter: -2,
+            belowOrigin: true,
+            alignment: 'left' // Displays dropdown with edge aligned to the left of button
+        });
+        // Used to remove active class on dropdown buttons
+        $('li').click(function () {
+            $(this).siblings().removeClass('active');
+        });
+    };
+    /**
+     * Method to use on dropdown buttons to add class 'active'
+     */
+    HeaderComponent.prototype.activation = function () {
+        $('.dropdown-button').parent().addClass('active');
     };
     __decorate([
         core_1.ViewChild('navUl'), 
@@ -34,7 +44,7 @@ var HeaderComponent = (function () {
             templateUrl: './header.component.html',
             styleUrls: ['./header.component.css']
         }), 
-        __metadata('design:paramtypes', [core_1.Renderer])
+        __metadata('design:paramtypes', [])
     ], HeaderComponent);
     return HeaderComponent;
 }());

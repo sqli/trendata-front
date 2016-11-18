@@ -1,4 +1,4 @@
-import {Component, ElementRef, ViewChild, AfterViewInit, Renderer} from "@angular/core";
+import {Component, ElementRef, ViewChild, AfterViewInit} from "@angular/core";
 
 @Component({
     moduleId: module.id,
@@ -11,18 +11,27 @@ export class HeaderComponent implements AfterViewInit {
 
     @ViewChild('navUl') navUl: ElementRef;
 
-    menuItems: Object[] = [
-        {title: 'services', link: '/sector-mapping'},
-        {title: 'rapports', link: '/reports'},
-        {title: 'offres', link: '/offers'},
-        {title: 'documentation', link: '/documentation'},
-        {title: 'support', link: '/support'},
-        {title: 'à propos', link: '/about'}
-    ];
+    ngAfterViewInit(): void {
+        $('.dropdown-button').dropdown({
+            inDuration: 300,
+            outDuration: 300,
+            constrain_width: false, // Does not change width of dropdown to that of the activator
+            hover: false, // Activate on hover
+            gutter: -2, // Spacing from edge
+            belowOrigin: true, // Displays dropdown below the button
+            alignment: 'left' // Displays dropdown with edge aligned to the left of button
+        });
 
-    constructor(public renderer: Renderer) {
+        // Used to remove active class on dropdown buttons
+        $('li').click(function() {
+            $(this).siblings().removeClass('active');
+        });
     }
 
-    ngAfterViewInit(): void {
+    /**
+     * Method to use on dropdown buttons to add class 'active'
+     */
+    activation(): void {
+        $('.dropdown-button').parent().addClass('active');
     }
 }

@@ -3,18 +3,34 @@
 
         <div class="nav-wrapper white">
             <a [routerLink]="['home']">
-                <img class="brand-logo left navbar-logo" src="app/resources/img/trendata_fulllogo.png" alt=""
+                <img class="brand-logo left navbar-logo" src="app/images/trendata_fulllogo.png" alt=""
                      height="55px"/>
             </a>
+
+
+            <!-- Dropdowns structure to put below -->
+            <ul id="services" class="dropdown-content">
+                <li><a [routerLink]="'sector-mapping'" (click)="activation(this)">CARTOGRAPHIE SECTORIELLE</a></li>
+            </ul>
+            <!-- Dropdowns structure end-->
+
+
             <div class="brand-logo center">
                 <ul #navUl class="center hide-on-med-and-down">
-                    <li *ngFor="let item of menuItems" class="tab">
-                        <a [routerLink]="[item.link]" class="blue-text">{{ item.title | uppercase }}</a>
-                    </li>
+
+                    <!-- Dropdown link -->
+                    <li><a class="dropdown-button" data-activates="services">SERVICES</a></li>
+
+                    <!-- Normal links -->
+                    <li [routerLinkActive]="['active']"><a [routerLink]="'reports'">RAPPORTS</a></li>
+                    <li [routerLinkActive]="['active']"><a [routerLink]="'offers'">OFFRES</a></li>
+                    <li [routerLinkActive]="['active']"><a [routerLink]="'documentation'">DOCUMENTATION</a></li>
+                    <li [routerLinkActive]="['active']"><a [routerLink]="'support'">SUPPORT</a></li>
+                    <li [routerLinkActive]="['active']"><a [routerLink]="'about'">ABOUT</a></li>
+
                 </ul>
             </div>
         </div>
-
     </nav>
 </header>
 

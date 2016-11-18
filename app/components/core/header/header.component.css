@@ -18,10 +18,11 @@ li:after {
     display: block;
     content: '';
     border-spacing: 2px;
-    border-bottom: 3px solid #0D47A1;
+    border-bottom: 3px solid #29aae2;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
+
 li:hover:after {
     transform: scaleX(1);
 }
@@ -31,12 +32,24 @@ li:hover:after {
 }
 
 .active {
-    color: #6a1b9a;
+    background: none;
 }
 
-/*.tabs .indicator {*/
-    /*color: #6a1b9a !important;*/
-/*}*/
+a {
+    transition: color 1s;
+}
+
+.active > a {
+    color: #93278f !important;
+}
+
+nav ul a:hover {
+    background: none;
+}
+
+a, .dropdown-content li > a {
+    color: #29aae2;
+}
 
 @media (max-width: 768px) {
     .navbar-logo {
