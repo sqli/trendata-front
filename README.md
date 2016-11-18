@@ -1,4 +1,4 @@
-![](app/resources/img/trendata_fulllogo_cropped.png)
+![](app/images/trendata_fulllogo_cropped.png)
 
 # Frontend
 

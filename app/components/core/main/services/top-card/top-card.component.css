@@ -1,0 +1,16 @@
+.title {
+    background: #e8e8e8;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: -20px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.title span {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+}

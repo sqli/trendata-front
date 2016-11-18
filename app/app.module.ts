@@ -18,8 +18,9 @@ import {ReportsComponent} from "./components/core/main/reports/reports.component
 import {OffersComponent} from "./components/core/main/offers/offers.component";
 import {DocumentationComponent} from "./components/core/main/documentation/documentation.component";
 import {SupportComponent} from "./components/core/main/support/support.component";
-import {TextCardComponent} from "./components/widgets/text-card/text-card.component";
 import {TopCardComponent} from "./components/core/main/services/top-card/top-card.component";
+import {CardContainerComponent} from "./components/widgets/card-container/card-container.component";
+import {TendencyCircleComponent} from "./components/core/main/services/top-card/tendency-circle/tendency-circle.component";
 
 @NgModule({
     imports: [BrowserModule, FormsModule, RouterModule, AppRoutingModule, MainRoutingModule],
@@ -37,8 +38,9 @@ import {TopCardComponent} from "./components/core/main/services/top-card/top-car
         CGVComponent,
         NewsComponent,
         SelectBtnComponent,
-        TextCardComponent,
-        TopCardComponent
+        CardContainerComponent,
+        TopCardComponent,
+        TendencyCircleComponent
     ],
     providers: [JQueryService],
     bootstrap: [AppComponent]

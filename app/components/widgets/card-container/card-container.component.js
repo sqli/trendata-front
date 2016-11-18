@@ -9,23 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var TextCardComponent = (function () {
-    function TextCardComponent() {
+var CardContainerComponent = (function () {
+    function CardContainerComponent() {
     }
     __decorate([
         core_1.Input(), 
         __metadata('design:type', String)
-    ], TextCardComponent.prototype, "textClass", void 0);
-    TextCardComponent = __decorate([
+    ], CardContainerComponent.prototype, "textClass", void 0);
+    CardContainerComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'text-card',
-            templateUrl: 'text-card.component.html',
-            styleUrls: ['text-card.component.css']
+            selector: 'card-container',
+            templateUrl: 'card-container.component.html',
+            styleUrls: ['card-container.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], TextCardComponent);
-    return TextCardComponent;
+    ], CardContainerComponent);
+    return CardContainerComponent;
 }());
-exports.TextCardComponent = TextCardComponent;
-//# sourceMappingURL=text-card.component.js.map
+exports.CardContainerComponent = CardContainerComponent;
+//# sourceMappingURL=card-container.component.js.map
