@@ -31,6 +31,7 @@ var support_component_1 = require("./components/core/main/support/support.compon
 var top_card_component_1 = require("./components/core/main/services/top-card/top-card.component");
 var card_container_component_1 = require("./components/widgets/card-container/card-container.component");
 var tendency_circle_component_1 = require("./components/core/main/services/top-card/tendency-circle/tendency-circle.component");
+var graphe_component_1 = require("./components/core/main/services/graphe/graphe.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -53,7 +54,8 @@ var AppModule = (function () {
                 select_btn_component_1.SelectBtnComponent,
                 card_container_component_1.CardContainerComponent,
                 top_card_component_1.TopCardComponent,
-                tendency_circle_component_1.TendencyCircleComponent
+                tendency_circle_component_1.TendencyCircleComponent,
+                graphe_component_1.GrapheComponent
             ],
             providers: [jQuery_service_1.JQueryService],
             bootstrap: [app_component_1.AppComponent]

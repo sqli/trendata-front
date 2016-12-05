@@ -21,6 +21,7 @@ import {SupportComponent} from "./components/core/main/support/support.component
 import {TopCardComponent} from "./components/core/main/services/top-card/top-card.component";
 import {CardContainerComponent} from "./components/widgets/card-container/card-container.component";
 import {TendencyCircleComponent} from "./components/core/main/services/top-card/tendency-circle/tendency-circle.component";
+import {GrapheComponent} from "./components/core/main/services/graphe/graphe.component";
 
 @NgModule({
     imports: [BrowserModule, FormsModule, RouterModule, AppRoutingModule, MainRoutingModule],
@@ -40,7 +41,8 @@ import {TendencyCircleComponent} from "./components/core/main/services/top-card/
         SelectBtnComponent,
         CardContainerComponent,
         TopCardComponent,
-        TendencyCircleComponent
+        TendencyCircleComponent,
+        GrapheComponent
     ],
     providers: [JQueryService],
     bootstrap: [AppComponent]
